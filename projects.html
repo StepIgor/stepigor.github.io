@@ -1,31 +1,105 @@
-<html>
-	<head>
-		<title>Проекты | StepIgor Site</title>
-		<meta charset='UTF-8'>
-		<link rel='shortcut icon' href='favicon.png'>
-	</head>
-	<body>
-		<div id='head' style='position:fixed;left:0;top:0;width:100%;height:54px;background:lightgrey;box-shadow:0 0 10px;'>
-			<table>
-				<tr>
-					<td style='width:160px'>
-						<a href='index.html'><img src='logo.png' style='vertical-align:middle;height:46px;'></a>
-					</td>
-					<td style='width:80px'>
-						<a href='projects.html' style='font-size:18px;color:black;text-decoration:none;font-family:calibri light;'><u><b>Проекты</b></u></a>
-					</td>
-					<td style='width:70px'>
-						<a href='articles.html' style='font-size:18px;color:black;text-decoration:none;font-family:calibri light;'><u><b>Статьи</b></u></a>
-					</td>
-					<td style='width:180px'>
-						<a href='studying.html' style='font-size:18px;color:black;text-decoration:none;font-family:calibri light;'><u><b>Учебная деятельность</b></u></a>
-					</td>
-				</tr>
-			</table>
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Проекты | StepIgor Site</title>
+	<link rel='shortcut icon' href='favicon.png'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<meta name="viewport" content="width=device-width">
+	<style>
+		body {
+			display: flex;
+			min-height: 100vh;
+			flex-direction: column;
+		}
+
+		.main {
+			flex: 1 0 auto;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="navbar-fixed">
+		<nav class="green darken-4">
+			<div class="nav-wrapper">
+				<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+				<a href="index.html" class="brand-logo"><img class="hide-on-small-only" style="height:54px;margin-left:5px;margin-top:5px;" src="logo.png" /><img class="hide-on-med-and-up" style="height:46px;margin-left:5px;margin-top:5px;"
+						src="logo.png" /></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="projects.html">Проекты</a></li>
+					<li><a href="articles.html">Статьи</a></li>
+					<li><a href="studying.html">Учебная деятельность</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+
+	<div class="main">
+		<div class="container">
+			<div class="row">
+				<h3 class="light">Проекты</h3>
+			</div>
+			<div class="row">
+				Здесь пока что ничего нет.
+			</div>
 		</div>
-		<div id='body' style='position:absolute;left:0;top:54px;width:100%;'>
-			<div style="padding:15px;font-size:48px;color:black;font-family:calibri light;">Проекты:</div>
-			
+	</div>
+
+
+
+	<footer class="page-footer green darken-4">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Связь с разработчиком</h5>
+					<div style="height:10px;"></div>
+					<p class="grey-text text-lighten-4">
+						<span><i class="material-icons left">mail</i>
+							<a href='mailto:igor.stepanov@difres.ru' class='white-text' target='_blank'><u>igor.stepanov@difres.ru</u></a></span>
+
+						<br /><br />
+						<span><i class="material-icons left">code</i>
+							<a href='https://github.com/stepigor' class='white-text' target='_blank'><u>github.com/stepigor</u></span>
+
+					</p>
+
+
+				</div>
+
+			</div>
 		</div>
-	</body>
+		<div class="footer-copyright">
+			<div class="container">
+				Разработано с использованием <a class="green-text text-lighten-3" target="_blank" href="http://materializecss.com">Materialize</a>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<ul id="slide-out" class="sidenav">
+		<li><a href="index.html" class="green-text text-darken-4"><img src="favicon.png" style="height:32px;vertical-align:middle;" /> <span style="vertical-align:middle;">StepIgor Site</span></a></li>
+		<li>
+			<div class="divider"></div>
+		</li>
+		<li><a class="subheader">Основные разделы</a></li>
+		<li><a href="projects.html">Проекты</a></li>
+		<li><a href="articles.html">Статьи</a></li>
+		<li><a href="studying.html">Учебная деятельность</a></li>
+	</ul>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.sidenav').sidenav();
+		});
+	</script>
+</body>
+
 </html>
